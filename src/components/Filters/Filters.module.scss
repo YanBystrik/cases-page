@@ -1,0 +1,66 @@
+.root {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  cursor: pointer;
+
+  .rectangle {
+    width: 25px;
+    height: 25px;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin-right: 32px;
+    cursor: pointer;
+  }
+
+  .rectangleBackground {
+    background-color: #fff;
+  }
+
+  .dash {
+    display: block;
+    width: 80px;
+    height: 0;
+    border: 1px solid #fff;
+    margin-right: 32px;
+
+    transition: all 0.3s linear;
+  }
+
+  .hideDash {
+    width: 0;
+    visibility: hidden;
+    margin-right: 0;
+    transition: all 0.3s linear;
+  }
+
+  .clear {
+    font-size: 24px;
+    margin: 0;
+    color: #fb6542;
+  }
+
+  .clearDash {
+    height: 0;
+    width: 35px;
+    border: 1px solid #fb6542;
+    margin-right: 20px;
+  }
+
+  .title {
+    font-size: 48px;
+    margin: 0;
+    color: #fff;
+  }
+
+  .colorTitle {
+    color: #fb6542;
+  }
+
+  .rectangleBorder {
+    border: 3px solid #fb6542;
+  }
+}

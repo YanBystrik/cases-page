@@ -1,0 +1,64 @@
+.root {
+  visibility: hidden;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 60px;
+
+  .titleWrapper {
+    padding-left: 60px;
+    padding-right: 100px;
+    gap: 200px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+
+  .dash {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 30px 0 0 60px;
+
+    border: 1px solid #fff;
+    background-color: #fff;
+  }
+
+  .filter {
+    font-size: 24px;
+    color: #fff;
+    max-width: 300px;
+
+    cursor: pointer;
+  }
+
+  .filtersWrapper {
+    padding-left: 60px;
+    padding-right: 100px;
+  }
+
+  .selected {
+    color: #fb6542;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slideInFromRight {
+  animation: slideInFromRight 0.5s ease-in-out forwards;
+  visibility: visible;
+  overflow: hidden;
+}
